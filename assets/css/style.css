@@ -77,3 +77,10 @@ select{
   padding: 30px 40px;
   margin: 10px 0;
 }
+.nome_passeggero{
+  height: 150px;
+  background-color: grey;
+}
+#sconto, #carrozza, #codice-cp, #ticket-price{
+  margin-top: 50px;
+}
