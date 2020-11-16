@@ -25,7 +25,7 @@ btnGenera.addEventListener("click", function () {
 
     if(fascia == "minorenne"){
       console.log("Applica 20% di sconto");
-      offer = "Sconto Minorenni";
+      offer = "Sconto Minorenne";
     }else if (fascia == "over65") {
       console.log("Applica 40% di sconto");
       offer = "Sconto Silver";
@@ -61,5 +61,5 @@ btnAnnulla.addEventListener("click", function () {
 
     fullNameInput.value = "";
     kmInput.value = "";
-    fasciaInput.value = "";
+    //fasciaInput.value = "";
 });

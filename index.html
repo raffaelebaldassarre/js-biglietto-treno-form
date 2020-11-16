@@ -8,19 +8,19 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <section id="calcolo-biglietto">
+  <section id="calcolo-biglietto" class="d-flex">
     <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
-   <div class="card-rounded">
-     <div class="row">
-      <div class="col">
-        <label for="name">Nome e Cognome</label>
+    <div class="card-rounded">
+     <div class="row d-flex space-around">
+      <div class="col d-flex">
+        <label for="name">Nome Cognome</label>
         <input type="text" name="name" id="full-name">
       </div>
-      <div class="col">
+      <div class="col d-flex">
         <label for="name">Km da percorrere</label>
         <input type="number" class="km" id="km">
       </div>
-      <div class="col">
+      <div class="col d-flex">
         <label for="fascia">Fascia di età</label>
         <select name="fascia" id="fascia">
           <option value="minorenne">Minorenne</option>
@@ -29,20 +29,23 @@
         </select>
       </div>
      </div>
-     <div class="row">
+     <div class="row d-flex justify-center">
       <button id="btn-genera">Genera</button>
       <button id="btn-annulla">Annulla</button>
     </div>
    </div>
   </section>
 
-  <section id="biglietto">
-    <h2>Biglietto</h2>
-    <div id="nome-passeggero"></div>
-    <div id="sconto"></div>
-    <div id="carrozza"></div>
-    <div id="codice-cp"></div>
-    <div id="ticket-price"></div>
+  <section id="biglietto" class="d-flex">
+    <h2>IL TUO BIGLIETTO</h2>
+    <div id="dettaglio-passeggero" class="d-flex">
+      <h3>DETTAGLIO PASSEGGERI</h3>
+      <div id="nome-passeggero"></div>
+      <div id="sconto"></div>
+      <div id="carrozza"></div>
+      <div id="codice-cp"></div>
+      <div id="ticket-price"></div>
+    </div>
   </section>
 
   <script src="assets/js/main.js" charset="utf-8"></script>

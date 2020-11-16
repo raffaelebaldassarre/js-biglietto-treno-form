@@ -5,4 +5,75 @@
 }
 body{
   font-family: "Raleway", sans-serif;
+  background-color: #b91450;
+}
+.d-flex{
+  display: flex;
+}
+h2{
+  color: white;
+}
+label{
+  color: #b91450;
+}
+#calcolo-biglietto{
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.col{
+  flex-direction: column;
+}
+.justify-center{
+  justify-content: center;
+}
+.card-rounded{
+  width: 50%;
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px 40px;
+  margin: 50px 0;
+  box-shadow: 1px 1px 5px black;
+}
+.space-around{
+  justify-content: space-around;
+}
+label{
+  margin-bottom: 20px;
+  text-align: center;
+}
+button{
+  font-size: 1.1rem;
+  margin-top: 40px;
+  margin-left: 10px;
+  color: #b91450;
+  padding: 5px;
+  border-radius: 5px;
+}
+input{
+  font-size: 1.1rem;
+  padding: 5px;
+  border-radius: 5px;
+  border-color: #b91450;
+  text-align: center;
+}
+select{
+  font-size: 1.1rem;
+  padding: 5px;
+  border-radius: 5px;
+  border-color: #b91450;
+  text-align: center;
+}
+#biglietto{
+  align-items: center;
+  flex-direction: column;
+}
+#dettaglio-passeggero{
+  flex-direction: row;
+  width: 50%;
+  height: 200px;
+  background-color: white;
+  padding: 30px 40px;
+  margin: 10px 0;
 }
