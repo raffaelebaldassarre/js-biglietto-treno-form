@@ -84,3 +84,9 @@ select{
 #sconto, #carrozza, #codice-cp, #ticket-price{
   margin-top: 50px;
 }
+.hidden{
+  opacity: 0;
+}
+.visible{
+  opacity: 1;
+}

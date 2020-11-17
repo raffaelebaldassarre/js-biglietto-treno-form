@@ -2,10 +2,11 @@ var btnGenera = document.getElementById('btn-genera');
 var btnAnnulla = document.getElementById('btn-annulla');
 
 btnGenera.addEventListener("click", function () {
-    var offer = document.getElementById('offer');
+    document.getElementById('offer');
     // Genera Ticket
     console.log("Genera il Ticket");
 
+    var offer = "Standard Ticket";
     // Selezionare valore degli input
     var fullNameInput = document.getElementById('full-name');
     var kmInput = document.getElementById('km');
@@ -15,7 +16,6 @@ btnGenera.addEventListener("click", function () {
     var fullName = fullNameInput.value;
     var km = kmInput.value;
     var fascia = fasciaInput.value;
-
     console.log(fullName, km, fascia);
 
     // Calcolo biglietto Treno
@@ -40,7 +40,7 @@ btnGenera.addEventListener("click", function () {
 
     // Genera numero Carrozza
     var numberCarrozza = Math.floor(Math.random() * 9) + 1 ;
-      var codiceCp = Math.floor(Math.random() * (100000 - 90000)) + 90000 ;
+    var codiceCp = Math.floor(Math.random() * (100000 - 90000)) + 90000 ;
 
     // Inserire dati nel BIGLIETTO
     elName.innerHTML = fullName;
@@ -48,12 +48,18 @@ btnGenera.addEventListener("click", function () {
     elTicket.innerHTML = "€" + ticketPrice;
     elCarrozza.innerHTML = numberCarrozza;
     elCodice.innerHTML = codiceCp;
+
+    // document.getElementById('biglietto').style.display = "block";
+    document.getElementById('biglietto').classList.add("visible");
+
 });
 
 btnAnnulla.addEventListener("click", function () {
     // Annulla
     console.log("Annula operazione");
-    document.getElementById('biglietto').style.display = "none";
+    // document.getElementById('biglietto').style.display = "none";
+    document.getElementById('biglietto').classList.remove("visible");
+    document.getElementById('biglietto').classList.add("hidden");
 
     var fullNameInput = document.getElementById('full-name');
     var kmInput = document.getElementById('km');
